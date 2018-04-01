@@ -8,6 +8,11 @@ require.config({
   },
   shim: {
     semantic: ['jquery']
+  },
+  packages: {
+    name: 'components',
+    location: 'components',
+    name: 'components',
   }
 })
 require(['./main'])

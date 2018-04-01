@@ -25,7 +25,7 @@ gulp.task('less', () => {
 gulp.watch([lessPath], () => {
   gulp.run('less')
 })
-gulp.watch(['*.html', `${cssPath}/*.css`], () => {
+gulp.watch(['*.html', `${cssPath}/*.css`, 'src/*.js', 'src/components/*.js'], () => {
   browserSync.reload()
 })
 

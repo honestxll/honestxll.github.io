@@ -3,17 +3,14 @@ define(require => {
   const Vue = require('vue');
   const VueRouter = require('vueRouter');
   require('semantic');
+  const Home = require('components/Home');
 
   Vue.use(VueRouter);
 
   const routes = [{
     path: '/',
     name: 'home',
-    component: {
-      template: `
-        <button class="ui button">test</button>
-      `
-    }
+    component: Home,
   }]
 
   const router = new VueRouter({
