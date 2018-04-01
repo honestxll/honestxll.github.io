@@ -1,0 +1,13 @@
+{
+  "name": "honestxll.github.io",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {},
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "gulp": "^3.9.1",
+    "gulp-less": "^4.0.0"
+  }
+}
