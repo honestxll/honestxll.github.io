@@ -1,4 +1,50 @@
 .pager {
   height: 100vh;
+  background: #000;
   overflow: hidden;
+}
+
+.mine {
+  position: fixed;
+  width: 280px;
+  height: 280px;
+  top: 50%;
+  left: 50%;
+  margin-top: -140px;
+  margin-left: -140px;
+  color: #fff;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .header {
+    text-align: center;
+  }
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+@keyframes blink-caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
+h1 {
+  font: bold 200% Consolas,Monaco,monospace;
+  border-right: 0.1em solid;
+  width: 16.5em;
+  width: 30ch;
+  margin: 2em 1em;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 3s steps(30,end), blink-caret 0.5s step-end infinite alternate;
+}
+
+.ui.secondary.pointing.menu {
+  border-bottom: none;
 }
