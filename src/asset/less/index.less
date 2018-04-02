@@ -6,18 +6,19 @@
 
 .mine {
   position: fixed;
-  width: 280px;
-  height: 280px;
+  width: 300px;
+  height: 300px;
   top: 50%;
   left: 50%;
-  margin-top: -140px;
-  margin-left: -140px;
+  margin-top: -150px;
+  margin-left: -150px;
   color: #fff;
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 2;
 
   .header {
     text-align: center;
@@ -37,6 +38,7 @@
 h1 {
   font: bold 200% Consolas,Monaco,monospace;
   border-right: 0.1em solid;
+  font-size: 30px;
   width: 16.5em;
   width: 30ch;
   margin: 2em 1em;
@@ -47,4 +49,43 @@ h1 {
 
 .ui.secondary.pointing.menu {
   border-bottom: none;
+}
+
+.musicContainer {
+  background: #000;
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  position: fixed!important;
+  right: 20px;
+  top: 20px;
+  border-radius: 50%;
+  z-index: 3;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  line-height: 60px;
+  overflow: hidden;
+}
+.musicContainer.play {
+  animation: rotate 3s linear infinite;
+}
+
+.musicContainer .icon {
+  margin: 0;
+}
+
+.shadow {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.7);
+}
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
 }

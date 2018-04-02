@@ -3,6 +3,7 @@ define(require => {
   const Vue = require('vue');
   const VueRouter = require('vueRouter');
   require('semantic');
+  const Layout = require('components/Layout');
   const Home = require('components/Home');
   const About = require('components/About');
 
@@ -10,12 +11,12 @@ define(require => {
 
   const routes = [{
     path: '/',
-    name: 'home',
-    component: Home,
-  }, {
-    path: '/about',
-    name: 'about',
-    component: About
+    name: 'layout',
+    component: Layout,
+    children: [
+      { path: '/', name: 'home', component: Home },
+      { path: '/about', name: 'about', component: About },
+    ]
   }]
 
   const router = new VueRouter({
