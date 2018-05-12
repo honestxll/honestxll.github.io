@@ -16,7 +16,7 @@ define(require => {
               <img src="http://demo.cssmoban.com/cssthemes3/btst_33_readonly/images/banner.jpg" alt=""/>
             </div>
             <div class="ui myContainer">
-              <h2 class="header">What can I do</h2>
+              <h2 class="header">Things I Can Do</h2>
               <div class="ui stack two column grid">
                 <div class="column">
                   <div class="ui small indicating progress" data-percent="80" data-total="100">
