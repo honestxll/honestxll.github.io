@@ -8,6 +8,9 @@ define(require => {
         },{
           path: '/about',
           name: 'About Me'
+        }, {
+          path: '/blog',
+          name: 'Blog'
         }]
       }
     },

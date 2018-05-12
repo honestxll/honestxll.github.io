@@ -1,5 +1,6 @@
 define(require => {
-  const $ = require('jquery');
+  const $ = require('jquery')
+  const Menu = require('components/Menu')
   return {
     mounted() {
       $('.musicContainer')
@@ -7,18 +8,19 @@ define(require => {
           on: 'hover'
         })
       $('.ui.dimmer').on('click', '.pause.icon', function(){
-        $('.musicContainer').removeClass('play');
-        $('.pause.icon').removeClass('pause').addClass('play');
-        document.querySelector('audio').pause();
+        $('.musicContainer').removeClass('play')
+        $('.pause.icon').removeClass('pause').addClass('play')
+        document.querySelector('audio').pause()
       })
       $('.ui.dimmer').on('click', '.play.icon', function(){
-        $('.musicContainer').addClass('play');
-        $('.play.icon').removeClass('play').addClass('pause');
-        document.querySelector('audio').play();
+        $('.musicContainer').addClass('play')
+        $('.play.icon').removeClass('play').addClass('pause')
+        document.querySelector('audio').play()
       })
     },
     template: `
-      <div>
+      <div class="layout">
+        <Menu></Menu>
         <router-view></router-view>
         <div class="musicContainer play">
           <i class="music icon"></i>
@@ -34,6 +36,9 @@ define(require => {
           id="music"
           hidden />
       </div>
-    `
+    `,
+    components: {
+      Menu,
+    }
   }
 })

@@ -1,5 +1,4 @@
 define(require => {
-  const Menu = require('components/Menu');
   return {
     mounted() {
       $('.ui.progress')
@@ -9,7 +8,6 @@ define(require => {
     },
     template: `
       <div class="pager">
-        <Menu></Menu>
         <div class="ui about">
           <div class="left section">
             <div class="top banner image">
@@ -86,9 +84,7 @@ define(require => {
             </div>
           </div>
         </div>
-    `,
-    components: {
-      Menu,
-    }
+      </div>
+    `
   }
 })
