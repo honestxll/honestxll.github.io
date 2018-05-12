@@ -6,7 +6,16 @@ define(require => {
         .dimmer({
           on: 'hover'
         })
-      ;
+      $('.ui.dimmer').on('click', '.pause.icon', function(){
+        $('.musicContainer').removeClass('play');
+        $('.pause.icon').removeClass('pause').addClass('play');
+        document.querySelector('audio').pause();
+      })
+      $('.ui.dimmer').on('click', '.play.icon', function(){
+        $('.musicContainer').addClass('play');
+        $('.play.icon').removeClass('play').addClass('pause');
+        document.querySelector('audio').play();
+      })
     },
     template: `
       <div>
