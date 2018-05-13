@@ -12,8 +12,8 @@
   width: 60px;
   height: 60px;
   position: fixed!important;
-  right: 20px;
-  top: 20px;
+  left: 20px;
+  bottom: 20px;
   border-radius: 50%;
   z-index: 3;
   color: #fff;
@@ -47,6 +47,7 @@
  */
 .ui.secondary.pointing.menu {
   border-bottom: none;
+  overflow: hidden;
 }
 /**
  * home
@@ -190,37 +191,88 @@
  * Blog
  */
 .blog.pager {
-  background: url("/src/asset/img/blog-bg.jpg") no-repeat;
-  background-size: cover;
+  background: url("/src/asset/img/5-120601095959.jpg");
+  color: #fff;
 }
-.ui.search {
+.blog.pager .ui.search {
   position: fixed;
   top: 2px;
   z-index: 300;
 }
 @media only screen and (min-width: 1200px) {
-  .ui.search {
+  .blog.pager .ui.search {
     right: calc((100% - 1127px) / 2);
   }
 }
-.ui.right.floated.icon.input {
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
+  .blog.pager .ui.search {
+    right: calc((100% - 933px) / 2);
+  }
+}
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+  .blog.pager .ui.search {
+    right: calc((100% - 723px) / 2);
+  }
+}
+@media only screen and (max-width: 767px) {
+  .blog.pager .ui.search {
+    right: 0.928571em;
+  }
+  .blog.pager .ui.search .ui.right.floated.icon.input {
+    width: 140px;
+  }
+}
+.blog.pager .ui.search .ui.right.floated.icon.input {
   overflow: hidden;
   order: 20;
   align-self: flex-end !important;
 }
-.ui.right.floated.icon.input input {
+.blog.pager .ui.search .ui.right.floated.icon.input input {
   background: none;
   border-radius: 0;
   border: none;
   border-bottom: 1.5px solid #ffffff;
   transform: translateY(40px);
   transition: all 0.5s;
-  padding: .85714286em 1.14285714em;
+  padding: 0.85714286em 1.14285714em;
 }
-.ui.right.floated.icon.input input.reveal {
+.blog.pager .ui.search .ui.right.floated.icon.input input.reveal {
   transform: translateY(0);
 }
-.ui.right.floated.icon.input .search.icon {
+.blog.pager .ui.search .ui.right.floated.icon.input .search.icon {
   pointer-events: inherit;
   cursor: pointer;
+}
+.blog.pager .ui.blog.container {
+  margin-top: 120px;
+}
+.blog.pager .ui.blog.container .ui.articles {
+  list-style-type: lower-latin;
+  padding-left: 0.928571em;
+}
+.blog.pager .ui.blog.container .ui.articles .article {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  cursor: pointer;
+  height: 30px;
+  margin-bottom: 10px;
+}
+.blog.pager .ui.blog.container .ui.articles .article .title {
+  font-size: 24px;
+}
+.blog.pager .ui.blog.container .ui.articles .article .time {
+  margin-left: 100px;
+  align-self: flex-end;
+}
+/**
+ * Article
+ */
+.blog.article.pager {
+  overflow: auto;
+}
+.blog.article.pager pre {
+  background: rgba(0, 0, 0, 0.35);
+  border-radius: 0.4em;
+  padding: 1em;
 }
