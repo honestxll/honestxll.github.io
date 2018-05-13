@@ -5,6 +5,14 @@ define(function(require) {
         files: []
       }
     },
+    mounted() {
+      $('.icon.input .search.icon')
+        .click(function(){
+          $(this)
+            .prev('input')
+            .toggleClass('reveal')
+        })
+    },
     created() {
       fetch('/md/config.json')
         .then(response => response.json())
@@ -14,9 +22,12 @@ define(function(require) {
         })
     },
     template: `
-      <div class="ui container">
-        <div class="ui list">
-          <div class="item" v-for="file in files">{{ file.name }}</div>
+      <div class="blog pager">
+        <div class="ui search">
+          <div class="ui right floated icon input">
+            <input type="text" placeholder="搜索...">
+            <i class="search icon"></i>
+          </div>
         </div>
       </div>
     `

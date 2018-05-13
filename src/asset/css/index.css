@@ -186,3 +186,41 @@
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3) !important;
   background-color: #555!important;
 }
+/**
+ * Blog
+ */
+.blog.pager {
+  background: url("/src/asset/img/blog-bg.jpg") no-repeat;
+  background-size: cover;
+}
+.ui.search {
+  position: fixed;
+  top: 2px;
+  z-index: 300;
+}
+@media only screen and (min-width: 1200px) {
+  .ui.search {
+    right: calc((100% - 1127px) / 2);
+  }
+}
+.ui.right.floated.icon.input {
+  overflow: hidden;
+  order: 20;
+  align-self: flex-end !important;
+}
+.ui.right.floated.icon.input input {
+  background: none;
+  border-radius: 0;
+  border: none;
+  border-bottom: 1.5px solid #ffffff;
+  transform: translateY(40px);
+  transition: all 0.5s;
+  padding: .85714286em 1.14285714em;
+}
+.ui.right.floated.icon.input input.reveal {
+  transform: translateY(0);
+}
+.ui.right.floated.icon.input .search.icon {
+  pointer-events: inherit;
+  cursor: pointer;
+}
