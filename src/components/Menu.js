@@ -22,7 +22,7 @@ define(require => {
             :to="menu.path"
             class="item"
             active-class="active"
-            exact
+            :exact="menu.name === 'Home'"
             >{{ menu.name }}</router-link>
           </div>
       </div>
