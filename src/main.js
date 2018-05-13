@@ -7,6 +7,7 @@ define(require => {
   const Home = require('components/Home')
   const About = require('components/About')
   const Blog = require('components/Blog')
+  const Article = require('components/Article')
 
   Vue.use(VueRouter)
 
@@ -17,7 +18,8 @@ define(require => {
     children: [
       { path: '/', name: 'home', component: Home },
       { path: '/about', name: 'about', component: About },
-      { path: '/blog', name: 'about', component: Blog },
+      { path: '/blog', name: 'blog', component: Blog },
+      { path: '/blog/:index', name: 'article', component: Article },
     ]
   }]
 
