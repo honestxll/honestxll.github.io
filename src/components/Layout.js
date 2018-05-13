@@ -31,8 +31,8 @@ define(require => {
         <audio
           src="src/asset/media/ルルティア - 无忧歌(Music Box Ver) ＊Bonus Track.mp3" controls="controls"
           preload
-          autoplay
           loop
+          autoplay
           id="music"
           hidden />
       </div>
