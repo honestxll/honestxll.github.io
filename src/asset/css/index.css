@@ -137,7 +137,7 @@
   width: 300px;
   height: 100vh;
   flex-shrink: 0;
-  background: #7fe486;
+  background: #f0f0f0;
   color: rgba(0, 0, 0, 0.75);
   padding: 10px;
   display: flex;
@@ -247,6 +247,7 @@
   transform: translateY(40px);
   transition: all 0.5s;
   padding: 0.85714286em 1.14285714em;
+  color: #fff;
 }
 .blog.pager .ui.search .ui.right.floated.icon.input input.reveal {
   transform: translateY(0);
@@ -254,13 +255,18 @@
 .blog.pager .ui.search .ui.right.floated.icon.input .search.icon {
   pointer-events: inherit;
   cursor: pointer;
+  color: #fff;
 }
 .blog.pager .ui.blog.container {
   margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .blog.pager .ui.blog.container .ui.articles {
   list-style-type: lower-latin;
   padding-left: 0.928571em;
+  height: 400px;
 }
 .blog.pager .ui.blog.container .ui.articles .article {
   display: flex;
@@ -273,9 +279,31 @@
 .blog.pager .ui.blog.container .ui.articles .article .title {
   font-size: 24px;
 }
+.blog.pager .ui.blog.container .ui.articles .article .title .tag {
+  font-size: 12px;
+  background: pink;
+  padding: 0 .4em;
+  border-radius: 4px;
+}
 .blog.pager .ui.blog.container .ui.articles .article .time {
   margin-left: 100px;
   align-self: flex-end;
+}
+.blog.pager .ui.blog.container .ui.vue.pagination.menu {
+  background: rgba(0, 0, 0, 0.75);
+  width: fit-content;
+  align-self: center;
+}
+.blog.pager .ui.blog.container .ui.vue.pagination.menu .item {
+  cursor: pointer!important;
+  outline: none;
+  color: #fff;
+}
+.blog.pager .ui.blog.container .ui.vue.pagination.menu .item.disabled {
+  color: rgba(255, 255, 255, 0.75) !important;
+}
+.blog.pager .ui.blog.container .ui.vue.pagination.menu .item.active {
+  color: red!important;
 }
 /**
  * Article
@@ -287,4 +315,20 @@
   background: rgba(0, 0, 0, 0.35);
   border-radius: 0.4em;
   padding: 1em;
+}
+.blog.article.pager code {
+  background: #333;
+  margin: 0 .4em;
+  border-radius: 4px;
+  padding: 0 .4em;
+  color: #eb9d19;
+}
+.blog.article.pager blockquote {
+  border-left: 4px solid #42b983;
+  font-size: 16px;
+  margin-left: 0;
+  padding-left: 1em;
+}
+.blog.article.pager p {
+  color: rgba(255, 255, 255, 0.75);
 }

@@ -154,7 +154,7 @@
     width: 300px;
     height: 100vh;
     flex-shrink: 0;
-    background: #7fe486;
+    background: #f0f0f0;
     color: rgba(0, 0, 0, .75);
     padding: 10px;
     display: flex;
@@ -269,6 +269,7 @@
         transform: translateY(40px);
         transition: all 0.5s;
         padding: 0.85714286em 1.14285714em;
+        color: #fff;
 
         &.reveal {
           transform: translateY(0);
@@ -278,16 +279,21 @@
       .search.icon {
         pointer-events: inherit;
         cursor: pointer;
+        color: #fff;
       }
     }
   }
 
   .ui.blog.container {
     margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     .ui.articles {
       list-style-type: lower-latin;
       padding-left: 0.928571em;
+      height: 400px;
 
       .article {
         display: flex;
@@ -298,11 +304,33 @@
         margin-bottom: 10px;
         .title {
           font-size: 24px;
+          .tag {
+            font-size: 12px;
+            background: pink;
+            padding: 0 .4em;
+            border-radius: 4px;
+          }
         }
 
         .time {
           margin-left: 100px;
           align-self: flex-end;
+        }
+      }
+    }
+    .ui.vue.pagination.menu {
+      background: rgba(0, 0, 0, 0.75);
+      width: fit-content;
+      align-self: center;
+      .item {
+        cursor: pointer!important;
+        outline: none;
+        color: #fff;
+        &.disabled {
+          color: rgba(255, 255, 255, 0.75)!important;
+        }
+        &.active {
+          color: red!important;
         }
       }
     }
@@ -318,5 +346,21 @@
     background: rgba(0, 0, 0, .35);
     border-radius: 0.4em;
     padding: 1em;
+  }
+  code {
+    background: #333;
+    margin: 0 .4em;
+    border-radius: 4px;
+    padding: 0 .4em;
+    color: #eb9d19;
+  }
+  blockquote {
+    border-left: 4px solid #42b983;
+    font-size: 16px;
+    margin-left: 0;
+    padding-left: 1em;
+  }
+  p {
+    color: rgba(255, 255, 255, 0.75);
   }
 }
