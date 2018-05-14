@@ -7,6 +7,7 @@ require.config({
     semantic: 'bower_components/semantic/dist/semantic.min',
     highlight: 'bower_components/highlightjs/highlight.pack.min',
     md: 'bower_components/markdown-it/dist/markdown-it.min',
+    paginate: 'bower_components/vuejs-paginate/dist/index'
   },
   shim: {
     semantic: ['jquery'],
