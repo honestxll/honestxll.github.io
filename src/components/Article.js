@@ -29,17 +29,22 @@ define(function(require) {
       $('.ui.secondary.menu').css('background', 'inherit');
     },
     created() {
-      const { index } = this.$route.params
+      const { id } = this.$route.params
       // 先去获取文章列表
       fetch('/md/config.json')
         .then(response => response.json())
         .then(responseData => {
-          const { name } = responseData.files[index]
-          fetch(`/md/${ name }.md`)
-            .then(response => response.text())
-            .then(responseData => {
-              this.markdown = md.render(responseData)
-            })
+          responseData.files.map((item, index) => {
+            if (item.id == id) {
+              const { name } = responseData.files[index]
+              fetch(`/md/${ name }.md`)
+                .then(response => response.text())
+                .then(responseData => {
+                  this.markdown = md.render(responseData)
+                })
+            }
+            return
+          })
         })
     },
     template: `
