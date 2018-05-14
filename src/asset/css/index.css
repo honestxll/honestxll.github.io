@@ -1,4 +1,10 @@
 /**
+ * loading
+ */
+.pace-running {
+  background: #fff;
+}
+/**
  * layout
  */
 .pager {
