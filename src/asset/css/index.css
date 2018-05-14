@@ -98,10 +98,17 @@
 .ui.about {
   display: flex;
 }
+@media only screen and (max-width: 767px) {
+  .ui.about {
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 100vh;
+  }
+}
 .ui.about .left.section {
   background: #fff;
   height: 100vh;
-  overflow-y: scroll;
 }
 .ui.about .left.section .ui.myContainer {
   padding: 30px 50px;
@@ -122,6 +129,9 @@
 .ui.about .left.section .ui.stack .ui.progress {
   background: none;
   width: 100%;
+}
+.ui.about .left.section .ui.stack .ui.progress .progress {
+  left: 0.2em;
 }
 .ui.about .right.section {
   width: 300px;
@@ -161,10 +171,12 @@
 }
 @media only screen and (max-width: 767px) {
   .ui.about .right.section {
-    width: 200px;
+    width: 100vw;
   }
   .ui.about .right.section .ui.info .image {
     padding: 10px 20px;
+    width: 50%;
+    margin: 0 auto;
   }
   .ui.about .right.section .ui.info h3.header {
     font-size: 24px;

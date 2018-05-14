@@ -107,11 +107,16 @@
  */
 .ui.about {
   display: flex;
+  @media only screen and (max-width: 767px) {
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 100vh;
+  }
 
   .left.section {
     background: #fff;
     height: 100vh;
-    overflow-y: scroll;
 
     .ui.myContainer {
       padding: 30px 50px;
@@ -136,6 +141,9 @@
       .ui.progress {
         background: none;
         width: 100%;
+        .progress {
+          left: 0.2em;
+        }
 
         .stack {}
       }
@@ -187,11 +195,13 @@
       }
     }
     @media only screen and (max-width: 767px) {
-      width: 200px;
+      width: 100vw;
 
       .ui.info {
         .image {
           padding: 10px 20px;
+          width: 50%;
+          margin: 0 auto;
         }
 
         h3.header {
