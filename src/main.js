@@ -19,7 +19,7 @@ define(require => {
       { path: '/', name: 'home', component: Home },
       { path: '/about', name: 'about', component: About },
       { path: '/blog', name: 'blog', component: Blog },
-      { path: '/blog/:index', name: 'article', component: Article },
+      { path: '/blog/:id', name: 'article', component: Article },
     ]
   }]
 
