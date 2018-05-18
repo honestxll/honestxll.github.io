@@ -15,7 +15,7 @@ define(function(require) {
   return {
     data() {
       return {
-        markdown: null
+        markdown: '<img src="src/asset/img/loading.svg" alt="" class="loading" />'
       }
     },
     mounted() {
