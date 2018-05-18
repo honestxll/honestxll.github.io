@@ -11,7 +11,7 @@ define(require => {
         <div class="ui about">
           <div class="left section">
             <div class="top banner image">
-              <img src="http://demo.cssmoban.com/cssthemes3/btst_33_readonly/images/banner.jpg" alt=""/>
+              <img src="src/asset/img/desktop.jpg" alt=""/>
             </div>
             <div class="ui myContainer">
               <h2 class="header">Things I Can Do</h2>
@@ -70,10 +70,10 @@ define(require => {
           <div class="right section">
             <div class="ui info">
               <div class="image">
-                <img src="http://demo.cssmoban.com/cssthemes3/btst_33_readonly/images/avatar.jpg" alt=""/>
+                <img src="src/asset/img/avatar.jpg" alt=""/>
               </div>
               <h3 class="header">Honest</h3>
-              <div class="content">化身奶爸...</div>
+              <div class="content">我叫陈实，95 年出生在安徽的一个小农村。小时候的梦想是当一个程序员，现在已经实现了 😁。目前主要做网站开发，喜欢研究一些新鲜的事物。</div>
             </div>
             <div class="ui contact">
               <h4 class="ui horizontal divider header">
