@@ -126,6 +126,7 @@
   width: 100%;
   object-fit: cover;
   height: 300px;
+  background: #e0e0e0;
 }
 .ui.about .left.section .ui.stack .ui.progress {
   background: none;
@@ -157,6 +158,7 @@
   object-fit: cover;
   transition: transform 2s;
   cursor: pointer;
+  background: #e0e0e0;
 }
 .ui.about .right.section .ui.info .image img:hover {
   transform: rotate(360deg);
