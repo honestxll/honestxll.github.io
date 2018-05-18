@@ -178,6 +178,12 @@
 .ui.about .right.section .ui.contact .center.aligned {
   text-align: center;
 }
+.ui.about .right.section .ui.contact .center.aligned a {
+  color: black;
+}
+.ui.about .right.section .ui.contact .center.aligned a:hover {
+  text-decoration: underline;
+}
 @media only screen and (max-width: 767px) {
   .ui.about .right.section {
     width: 100vw;

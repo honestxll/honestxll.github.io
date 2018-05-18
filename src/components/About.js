@@ -80,7 +80,9 @@ define(require => {
                 <i class="mail icon"></i>
                 邮箱
               </h4>
-              <p class="center aligned">honestxll@gmail.com</p>
+              <p class="center aligned">
+                <a href="mailto:honestxll@gmail.com">honestxll@gmail.com</a>
+              </p>
             </div>
           </div>
         </div>
