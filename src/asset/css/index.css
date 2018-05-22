@@ -128,6 +128,11 @@
   height: 300px;
   background: #e0e0e0;
 }
+@media only screen and (min-height: 860px) {
+  .ui.about .left.section .top.banner.image img {
+    height: 500px;
+  }
+}
 .ui.about .left.section .ui.stack .ui.progress {
   background: none;
   width: 100%;
@@ -306,11 +311,6 @@
 }
 .blog.pager .ui.blog.container .ui.articles .article .title {
   font-size: 24px;
-}
-@media only screen and (max-width: 767px) {
-  .blog.pager .ui.blog.container .ui.articles .article .title {
-    font-size: 14px;
-  }
 }
 .blog.pager .ui.blog.container .ui.articles .article .title .tag {
   font-size: 12px;
