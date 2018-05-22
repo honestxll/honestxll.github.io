@@ -175,6 +175,9 @@
   -webkit-background-clip: text;
   margin-bottom: 10px;
 }
+.ui.about .right.section .ui.info .content {
+  line-height: 1.8;
+}
 .ui.about .right.section .ui.contact .center.aligned {
   text-align: center;
 }
@@ -312,7 +315,7 @@
 .blog.pager .ui.blog.container .ui.articles .article .title .tag {
   font-size: 12px;
   background: pink;
-  padding: 0 .4em;
+  padding: 0 0.4em;
   border-radius: 4px;
 }
 .blog.pager .ui.blog.container .ui.articles .article .time {
@@ -357,10 +360,10 @@
 }
 .blog.article.pager code {
   background: #333;
-  margin: 0 .4em;
+  margin: 0 0.4em;
   display: inline-block;
   border-radius: 4px;
-  padding: 0 .4em;
+  padding: 0 0.4em;
   color: #eb9d19;
 }
 .blog.article.pager blockquote {
@@ -374,9 +377,9 @@
 }
 .ui.blog.container code[class*='language'] {
   background: none;
-  margin: 0 .4em;
+  margin: 0 0.4em;
   display: inherit;
   border-radius: 4px;
-  padding: 0 .4em;
+  padding: 0 0.4em;
   color: inherit;
 }

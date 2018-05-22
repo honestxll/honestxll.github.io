@@ -143,6 +143,7 @@
       .ui.progress {
         background: none;
         width: 100%;
+
         .progress {
           left: 0.2em;
         }
@@ -196,13 +197,19 @@
         -webkit-background-clip: text;
         margin-bottom: 10px;
       }
+
+      .content {
+        line-height: 1.8;
+      }
     }
 
     .ui.contact {
       .center.aligned {
         text-align: center;
+
         a {
           color: black;
+
           &:hover {
             text-decoration: underline;
           }
@@ -323,15 +330,17 @@
         @media only screen and (min-height: 760px) {
           margin-bottom: 30px;
         }
+
         .title {
           font-size: 24px;
           @media only screen and (max-width: 767px) {
             font-size: 14px;
           }
+
           .tag {
             font-size: 12px;
             background: pink;
-            padding: 0 .4em;
+            padding: 0 0.4em;
             border-radius: 4px;
           }
         }
@@ -342,17 +351,21 @@
         }
       }
     }
+
     .ui.vue.pagination.menu {
       background: rgba(0, 0, 0, 0.75);
       width: fit-content;
       align-self: center;
+
       .item {
         cursor: pointer!important;
         outline: none;
         color: #fff;
+
         &.disabled {
           color: rgba(255, 255, 255, 0.75)!important;
         }
+
         &.active {
           color: red!important;
         }
@@ -360,12 +373,12 @@
     }
   }
 }
-
 /**
  * Article
  */
 .blog.article.pager {
   overflow: auto;
+
   .loading {
     width: 80px;
     height: 80px;
@@ -375,34 +388,39 @@
     margin-left: -40px;
     margin-top: -40px;
   }
+
   pre {
     background: rgba(0, 0, 0, .35);
     border-radius: 0.4em;
     padding: 1em;
   }
+
   code {
     background: #333;
-    margin: 0 .4em;
+    margin: 0 0.4em;
     display: inline-block;
     border-radius: 4px;
-    padding: 0 .4em;
+    padding: 0 0.4em;
     color: #eb9d19;
   }
+
   blockquote {
     border-left: 4px solid #42b983;
     font-size: 16px;
     margin-left: 0;
     padding-left: 1em;
   }
+
   p {
     color: rgba(255, 255, 255, 0.75);
   }
 }
+
 .ui.blog.container code[class*='language'] {
   background: none;
-  margin: 0 .4em;
+  margin: 0 0.4em;
   display: inherit;
   border-radius: 4px;
-  padding: 0 .4em;
+  padding: 0 0.4em;
   color: inherit;
 }
