@@ -304,6 +304,11 @@
 .blog.pager .ui.blog.container .ui.articles .article .title {
   font-size: 24px;
 }
+@media only screen and (max-width: 767px) {
+  .blog.pager .ui.blog.container .ui.articles .article .title {
+    font-size: 14px;
+  }
+}
 .blog.pager .ui.blog.container .ui.articles .article .title .tag {
   font-size: 12px;
   background: pink;
