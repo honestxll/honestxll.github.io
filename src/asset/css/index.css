@@ -283,6 +283,11 @@
   padding-left: 0.928571em;
   height: 400px;
 }
+@media only screen and (min-height: 760px) {
+  .blog.pager .ui.blog.container .ui.articles {
+    height: 600px;
+  }
+}
 .blog.pager .ui.blog.container .ui.articles .article {
   display: flex;
   flex-wrap: nowrap;
@@ -290,6 +295,11 @@
   cursor: pointer;
   height: 30px;
   margin-bottom: 10px;
+}
+@media only screen and (min-height: 760px) {
+  .blog.pager .ui.blog.container .ui.articles .article {
+    margin-bottom: 30px;
+  }
 }
 .blog.pager .ui.blog.container .ui.articles .article .title {
   font-size: 24px;

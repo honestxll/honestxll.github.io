@@ -309,6 +309,9 @@
       list-style-type: lower-latin;
       padding-left: 0.928571em;
       height: 400px;
+      @media only screen and (min-height: 760px) {
+        height: 600px;
+      }
 
       .article {
         display: flex;
@@ -317,6 +320,9 @@
         cursor: pointer;
         height: 30px;
         margin-bottom: 10px;
+        @media only screen and (min-height: 760px) {
+          margin-bottom: 30px;
+        }
         .title {
           font-size: 24px;
           .tag {
