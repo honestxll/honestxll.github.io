@@ -276,6 +276,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-bottom: 3em;
 }
 .blog.pager .ui.blog.container .ui.articles {
   list-style-type: lower-latin;
