@@ -7,6 +7,7 @@
 - [webpack官网-英文文档](https://webpack.js.org/)
 - [webpack中文网](https://webpack.docschina.org/)
 - 详细的教程可以看 [Webpack中文指南](https://zhaoda.gitbooks.io/webpack/content/)
+- [vue-loader 中文文档](https://vue-loader-v14.vuejs.org/zh-cn/)
 
 # 学习目标
 
