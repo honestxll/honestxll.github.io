@@ -285,7 +285,7 @@
 }
 @media only screen and (min-height: 760px) {
   .blog.pager .ui.blog.container .ui.articles {
-    height: 600px;
+    height: 500px;
   }
 }
 .blog.pager .ui.blog.container .ui.articles .article {
@@ -298,7 +298,7 @@
 }
 @media only screen and (min-height: 760px) {
   .blog.pager .ui.blog.container .ui.articles .article {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 }
 .blog.pager .ui.blog.container .ui.articles .article .title {
