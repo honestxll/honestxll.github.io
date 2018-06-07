@@ -6,7 +6,7 @@
 vue init webpack-simple xxx
 ```
 
-创建出来的 `webpack3` 的模版，不同的地方就是更加的简单一点。
+创建出来的 `webpack3` 的模版，不同的地方就是更加的简单一点，用的 `webpack4`，代码放在了 [git 仓库里](https://github.com/honestxll/webpack4-vue.git)。
 
 # 目录结构
 
