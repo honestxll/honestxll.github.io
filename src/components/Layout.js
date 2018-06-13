@@ -29,7 +29,7 @@ define(require => {
           </div>
         </div>
         <audio
-          src="src/asset/media/许巍 - 像风一样自由.mp3" controls="controls"
+          src="src/asset/media/門倉聡 - 未知の荒野へ.mp3" controls="controls"
           preload
           loop
           autoplay
