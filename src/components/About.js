@@ -73,7 +73,9 @@ define(require => {
                 <img src="src/asset/img/avatar.jpg" alt=""/>
               </div>
               <h3 class="header">Honest</h3>
-              <div class="content">我叫陈实，95 年出生在安徽的一个小农村。小时候的梦想是当一个程序员，现在已经实现了 😁。目前主要做网站开发，喜欢研究一些新鲜的事物。</div>
+              <div class="content">
+                我叫陈实，95 年出生在安徽的一个小农村。小时候的梦想是当一个程序员，现在已经实现了 😁。
+                目前主要做网站开发，喜欢研究一些新鲜的事物。有网站开发和 app、小程序开发的都可以联系我：）</div>
             </div>
             <div class="ui contact">
               <h4 class="ui horizontal divider header">
